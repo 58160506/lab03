@@ -7,44 +7,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <style>
-    /* Set height of the grid so .sidenav can be 100% (adjust if needed) */
-    .row.content {height: 1500px}
-    
-    /* Set gray background color and 100% height */
-    .sidenav {
-      background-color: #FF6A6A;
-      height: 100%;
-    }
-    
-    /* Set black background color, white text and some padding */
-    footer {
-      background-color: #333;
-      color: white;
-      padding: 15px;
-    }
-    
-    /* On small screens, set height to 'auto' for sidenav and grid */
-    @media screen and (max-width: 767px) {
-      .sidenav {
-        height: auto;
-        padding: 15px;
-      }
-      .row.content {height: auto;} 
-    }
-    p,h1,h2,h3,h4,h5,h6 {
-    font-family: Arial, Helvetica, sans-serif;
-     }
-     p{
-      font-size: 16px;
-     }
-    h1{
-      color: white;
-    }
-    h4.h{
-      color: white;
-    }
-  </style>
+  <link rel = "stylesheet" type = "text/css" href="http://angsila.informatics.buu.ac.th/~58160506/887371/lab03/style.css">
 </head>
 <body>
 
@@ -63,55 +26,82 @@
       <hr>
       <h2>การใช้งาน Grid ใน Bootstrap</h2>
       <h5><span class="label label-danger">Bootstrap</span> <span class="label label-primary">Grid</span></h5><br>
-      <p>Grid คือ Layout ที่คอยควบคุมวัตถุต่างๆ บนหน้าเว็บไซต์ให้แสดงผลได้อย่างถูกต้องตามหลัก box layout ซึ่งจะส่งผลดีต่อการเขียนหนึ่งหน้าเว็บไซต์ แต่สามารถใช้ร่วมกับอุปกรณ์ทุกขนาดหน้าจอ Grid system ของ Bootstrap เอง แบ่งออกเป็น 12 คอลัมน์ ถ้าให้เห็นภาพง่ายขึ้นก็น่าจะต้องบอกว่า เหมือนกับตาราง 1 แถว มี 12 คอลัมน์ประมาณนั้น ดังภาพด้านล่าง</p>
-      <img src="pic/grid1.png" class="img-responsive" alt="Image">      
-      <br><br>
-      
-    
+      <p>&nbsp;&nbsp;&nbsp;Grid คือ Layout ที่คอยควบคุมวัตถุต่างๆ บนหน้าเว็บไซต์ให้แสดงผลได้อย่างถูกต้องตามหลัก box layout ซึ่งจะส่งผลดีต่อการเขียนหนึ่งหน้าเว็บไซต์ แต่สามารถใช้ร่วมกับอุปกรณ์ทุกขนาดหน้าจอ Grid system ของ Bootstrap เอง แบ่งออกเป็น 12 คอลัมน์ ถ้าให้เห็นภาพง่ายขึ้นก็น่าจะต้องบอกว่า เหมือนกับตาราง 1 แถว มี 12 คอลัมน์ประมาณนั้น ซึ่งหน่วยที่เป็น 12 นี้ เราสามารถเฉลี่ยแต่ละส่วนได้ตามความต้องการ ดังภาพด้านล่าง</p>
+      <div class="table-responsive">
+      <table class="table">
+        <tbody>
+          <tr>
+          <td class="text-center">SPAN 1</td>
+          <td class="text-center">SPAN 1</td>
+          <td class="text-center">SPAN 1</td>
+          <td class="text-center">SPAN 1</td>
+          <td class="text-center">SPAN 1</td>
+          <td class="text-center">SPAN 1</td>
+          <td class="text-center">SPAN 1</td>
+          <td class="text-center">SPAN 1</td>
+          <td class="text-center">SPAN 1</td>
+          <td class="text-center">SPAN 1</td>
+          <td class="text-center">SPAN 1</td>
+          <td class="text-center">SPAN 1</td>
+          </tr>
+          <tr>
+          <td class="text-center" colspan="4">SPAN 4</td>
+          <td class="text-center" colspan="4">SPAN 4</td>
+          <td class="text-center" colspan="4">SPAN 4</td>
+          </tr>
+          <tr>
+           <td class="text-center" colspan="4">SPAN 4</td>
+          <td class="text-center" colspan="8">SPAN 8</td>
+          </tr>
+          <tr>
+           <td class="text-center" colspan="6">SPAN 6</td>
+          <td class="text-center" colspan="6">SPAN 6</td>
+          </tr>
+          <tr>
+           <td class="text-center" colspan="12">SPAN 12</td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+      <p>* แต่ละคอลัมน์จะปรับขนาดโดยอัตโนมัติตามขนาดของหน้าจอ *</p>
+      <br>
+      <p>&nbsp;&nbsp;&nbsp;เวลาเขียน code จะต้องเริ่มต้นด้วย class ที่ชื่อว่า “row” และสร้าง element ภายในด้วย prefix class เริ่มต้นว่า “col-หน่วยหน้าจอ-เลขคอลัมน์” สิ่งที่เราต้องระบุเพิ่มเติมลงไปก็มี 2 ค่าด้วยกันคือ หน่วยหน้าจอ และ เลขคอลัมน์<p>
+      <p><b>Grid Classes</b></p>
+      <p>&nbsp;- XS :: ใช้กับหน้าจอขนาดเล็กกว่า Ipad แนวตั้งลงมา (หน้าจอสมาร์ทโฟนต่างๆ)
+      <p>&nbsp;- SM :: ขนาดหน้าจอตั้งแต่ Ipad แนวตั้ง
+      <p>&nbsp;- MD :: ขนาดความกว้างต่ำสุดที่หน้าจอ Ipad แนวนอน
+      <p>&nbsp;- LG :: หน้าจอที่กว้างกว่า 1200 pixels ขึ้นไป หรือให้เหมาะสมกับขนาดหน้าจอโน้ตบุคมาตราฐาน
+      <br>
+
+      </br>
+      <p><b>การแบ่ง 2 คอลัมน์เท่าๆกัน<b></p>
+      <div class="table-responsive">
+      <table class="table">
+        <tbody>
+          <tr>
+           <td class="text-center" colspan="6">Columns A</td>
+          <td class="text-center" colspan="6">Columns B</td>
+          </tr>
+          </tbody>
+          </table>
+          </div>
+      <div class="panel panel-default">
+      <div class="panel-heading"><p>ตัวอย่างการเขียน code</p></div>
+      <div class="panel-body">
+      <p>&lt;div class="row"&gt;</p>
+      <p>&lt;div class="col-sm-6"&gt; Columns A  &lt;/div&gt;</p>
+      <p>&lt;div class="col-sm-6"&gt; Columns B  &lt;/div&gt;</p>
+      </div>
+      </div>
+  
+
       <hr>
       <h2>การใช้งาน Form</h2>
       <h5><span class="label label-danger">Bootstrap</span> <span class="label label-success">Form</span></h5><br>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <p>ฟอร์มทาหน ํ าท้ ี่ในการติดต่อสื่อสารหรือโตตอบก ้ บผั ใชู้ เว้ บไซต ็ ในล ์ กษณะการร ั ับส่งขอม้ ูล เมื่อผู้ใช้กรอกข้อมูลในฟอร์มและคลิกปุ่มส่งขอม้ ูล</p>
       <hr>
 
-      <h4>Leave a Comment:</h4>
-      <form role="form">
-        <div class="form-group">
-          <textarea class="form-control" rows="3" required></textarea>
-        </div>
-        <button type="submit" class="btn btn-success">Submit</button>
-      </form>
-      <br><br>
       
-      <p><span class="badge">2</span> Comments:</p><br>
-      
-      <div class="row">
-        <div class="col-sm-2 text-center">
-          <img src="https://scontent.fbkk10-1.fna.fbcdn.net/v/t1.0-1/15442169_572715406186297_8108071755595425153_n.jpg?oh=17ee7425c3d5bb321304f6bfd5b3943c&oe=58FF0BA0" class="img-circle" height="65" width="65" alt="Avatar">
-        </div>
-        <div class="col-sm-10">
-          <h4>Aratchaporn <small>Feb 8, 2017, 10:43 PM</small></h4>
-          <p>เยี่ยมไปเลย !!!</p>
-          <br>
-        </div>
-        <div class="col-sm-2 text-center">
-          <img src="https://scontent.fbkk10-1.fna.fbcdn.net/v/t1.0-9/13339707_1043155112444885_4988085357829065887_n.jpg?oh=93ff248fee0949f4f726fa0dbb715642&oe=593F8B0B" class="img-circle" height="65" width="65" alt="Avatar">
-        </div>
-        <div class="col-sm-10">
-          <h4>Charintip <small>Feb 8, 2017, 9:25 PM</small></h4>
-          <p>เป็นบล็อกที่ดี ได้ความรู้มากมายเลย</p>
-          <br>
-          <p><span class="badge">1</span> Comment:</p><br>
-          <div class="row">
-            <div class="col-sm-2 text-center">
-              <img src="https://scontent.fbkk10-1.fna.fbcdn.net/v/t1.0-9/16266046_1240802236000981_1697725781145393073_n.jpg?oh=f02f3d67eac84c4bc1ba33ee6e653848&oe=593E1FA2" class="img-circle" height="65" width="65" alt="Avatar">
-            </div>
-            <div class="col-xs-10">
-              <h4>Kooptikorn <small>Feb 8, 2017, 9:30 PM</small></h4>
-              <p>ขอบคุณครับ :)</p>
-              <br>
-            </div>
-          </div>
         </div>
       </div>
     </div>
