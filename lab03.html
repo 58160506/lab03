@@ -14,135 +14,48 @@
 <div class="container-fluid">
   <div class="row content">
     <div class="col-sm-3 sidenav">
-      <h1>Kooptikorn Blog</h1>
-      <ul class="nav nav-pills nav-stacked">
-        <li><h4 class="h">Bootstrap</h4></li>
-        <li><h4 class="h"> - การใช้งาน Grid ใน Bootstrap</h4></li>
-        <li><h4 class="h"> - การใช้งาน Form</h4></li>
-      </ul><br>
-    </div>
-
-    <div class="col-sm-9">
-      <h2>การใช้งาน Grid ใน Bootstrap</h2>
-      <hr><br>
-      <p>&nbsp;&nbsp;&nbsp;Grid คือ Layout ที่คอยควบคุมวัตถุต่างๆ บนหน้าเว็บไซต์ให้แสดงผลได้อย่างถูกต้องตามหลัก box layout ซึ่งจะส่งผลดีต่อการเขียนหนึ่งหน้าเว็บไซต์ แต่สามารถใช้ร่วมกับอุปกรณ์ทุกขนาดหน้าจอ Grid system ของ Bootstrap เอง แบ่งออกเป็น 12 คอลัมน์ ถ้าให้เห็นภาพง่ายขึ้นก็น่าจะต้องบอกว่า เหมือนกับตาราง 1 แถว มี 12 คอลัมน์ประมาณนั้น ซึ่งหน่วยที่เป็น 12 นี้ เราสามารถเฉลี่ยแต่ละส่วนได้ตามความต้องการ ดังภาพด้านล่าง</p>
-      <div class="table-responsive">
-      <table class="table">
-        <tbody>
-          <tr>
-          <td class="text-center">SPAN 1</td>
-          <td class="text-center">SPAN 1</td>
-          <td class="text-center">SPAN 1</td>
-          <td class="text-center">SPAN 1</td>
-          <td class="text-center">SPAN 1</td>
-          <td class="text-center">SPAN 1</td>
-          <td class="text-center">SPAN 1</td>
-          <td class="text-center">SPAN 1</td>
-          <td class="text-center">SPAN 1</td>
-          <td class="text-center">SPAN 1</td>
-          <td class="text-center">SPAN 1</td>
-          <td class="text-center">SPAN 1</td>
-          </tr>
-          <tr>
-          <td class="text-center" colspan="4">SPAN 4</td>
-          <td class="text-center" colspan="4">SPAN 4</td>
-          <td class="text-center" colspan="4">SPAN 4</td>
-          </tr>
-          <tr>
-           <td class="text-center" colspan="4">SPAN 4</td>
-          <td class="text-center" colspan="8">SPAN 8</td>
-          </tr>
-          <tr>
-           <td class="text-center" colspan="6">SPAN 6</td>
-          <td class="text-center" colspan="6">SPAN 6</td>
-          </tr>
-          <tr>
-           <td class="text-center" colspan="12">SPAN 12</td>
-          </tr>
-        </tbody>
-      </table>
-      </div>
-      <p>* แต่ละคอลัมน์จะปรับขนาดโดยอัตโนมัติตามขนาดของหน้าจอ *</p>
+      <h1>KOOPTIKORN BLOG</h1>
       <br>
-      <p>&nbsp;&nbsp;&nbsp;เวลาเขียน code จะต้องเริ่มต้นด้วย class ที่ชื่อว่า “row” และสร้าง element ภายในด้วย prefix class เริ่มต้นว่า “col-หน่วยหน้าจอ-เลขคอลัมน์” สิ่งที่เราต้องระบุเพิ่มเติมลงไปก็มี 2 ค่าด้วยกันคือ หน่วยหน้าจอ และ เลขคอลัมน์<p>
-      <p><b>Grid Classes</b></p>
-      <p>&nbsp;- XS :: ใช้กับหน้าจอขนาดเล็กกว่า Ipad แนวตั้งลงมา (หน้าจอสมาร์ทโฟนต่างๆ)
-      <p>&nbsp;- SM :: ขนาดหน้าจอตั้งแต่ Ipad แนวตั้ง
-      <p>&nbsp;- MD :: ขนาดความกว้างต่ำสุดที่หน้าจอ Ipad แนวนอน
-      <p>&nbsp;- LG :: หน้าจอที่กว้างกว่า 1200 pixels ขึ้นไป หรือให้เหมาะสมกับขนาดหน้าจอโน้ตบุคมาตราฐาน
+       <div class="dropdown">
+        <button class="btn btn-default dropdown-toggle col-xs-12" type="button" data-toggle="dropdown">Bootstap
+        <span class="caret"></span></button>
+        <ul class="dropdown-menu col-xs-12">
+    <li><a href="http://angsila.informatics.buu.ac.th/~58160506/887371/lab03/lab03.html">Home</a></li>
+    <li><a href="http://angsila.informatics.buu.ac.th/~58160506/887371/lab03/grid.html">การใช้งาน Grid ใน Bootstrap</a></li>
+    <li><a href="http://angsila.informatics.buu.ac.th/~58160506/887371/lab03/form.html">การใช้งาน Form</a></li>
+  </ul>
+</div>
+    <br>
+
+    </br>
+    </div>
+    <div class="col-sm-9">
+      <h2>Bootstrap</h2>
+      <hr>
+      <p>&nbsp;&nbsp;&nbsp;Bootstrap เป็น Front-end Framework ที่ช่วยให้เราสามารถสร้างเว็บแอพลิเคชันได้อย่างรวดเร็ว และ สวยงาม ตัว Bootstrap เองมีทั้ง CSS Component และ JavaScript Plugin ให้เราได้เรียกใช้งานได้อย่างหลากหลาย ตัว Bootstrap ถูกออกแบบมาให้รองรับการทำงานแบบ Responsive Web ซึ่งทำให้เราเขียนเว็บแค่ครั้งเดียวสามารถนำไปรันผ่านเบราเซอร์ได้ทั้งบน มือถือ แท็บเล็ต และพีซีทั่วไป โดยที่ไม่ต้องเขียนใหม่</p>
       <br>
 
       </br>
-      <p><b>การแบ่ง 2 คอลัมน์เท่าๆกัน</b></p>
-      <div class="table-responsive">
-      <table class="table">
-        <tbody>
-          <tr>
-           <td class="text-center" colspan="6">Columns A</td>
-          <td class="text-center" colspan="6">Columns B</td>
-          </tr>
-          </tbody>
-          </table>
-          </div>
-      <div class="panel panel-default">
-      <div class="panel-heading"><p>ตัวอย่างการเขียน code</p></div>
-      <div class="panel-body">
-      <p>&lt;div class="row"&gt;</p>
-      <p>&lt;div class="col-sm-6"&gt; Columns A  &lt;/div&gt;</p>
-      <p>&lt;div class="col-sm-6"&gt; Columns B  &lt;/div&gt;</p>
-      </div>
-      </div>
-      <br>
-
-      </br>  
-
-      
-      <h2>การใช้งาน Form</h2>
-      <hr><br>
-      <p>&nbsp;&nbsp;&nbsp;ฟอร์มทำหน้าที่ในการติดต่อสื่อสารกับผู้ใช้ในลักษณะการรับส่งข้อมูล เมื่อผู้ใช้กรอกข้อมูลในฟอร์มและคลิกปุ่มส่งข้อมูล</p>
-      <br>
-        <p>&nbsp;<b>ตัวอย่าง Form</b></p>
-        <form>
-        <div class="form-group">
-        <label for="email">Email:</label>
-        <input type="email" class="form-control" id="email" placeholder="Enter email">
-        </div>
-        <div class="form-group">
-        <label for="pwd">Password:</label>
-        <input type="password" class="form-control" id="pwd" placeholder="Enter password">
-        </div>
-        <div class="checkbox">
-        <label><input type="checkbox"> Remember me</label>
-        </div>
-        <button type="submit" class="btn btn-default">Submit</button>
-        </form>
-        <br>
-       <div class="panel panel-default">
-      <div class="panel-heading"><p>ตัวอย่างการเขียน code</p></div>
-      <div class="panel-body">
-      <p>&lt;form&gt;</p>
-      <p>&lt;div class="form-group"></p>
-      <p>&lt;label for="email">Email:&lt;/label></p>
-      <p>&lt;input type="email" class="form-control" id="email" placeholder="Enter email"></p>
-      <p>&lt;/div></p>
-      <p>&lt;div class="form-group"></p>
-      <p>&lt;label for="pwd">Password:&lt;/label></p>
-      <p>&lt;input type="password" class="form-control" id="pwd" placeholder="Enter password"></p>
-      <p>&lt;/div></p>
-      <p>&lt;div class="checkbox"></p>
-      <p>&lt;label>&lt;input type="checkbox"> Remember me&lt;/label></p>
-      <p>&lt;/div></p>
-      <p>&lt;button type="submit" class="btn btn-default">Submit&lt;/button></p>
-      <p>&lt;/form></p>
-      </div>
-      </div>
-        
+              <div class="col-sm-2">   
+              <img src="pic/pic1.png" class="img-responsive pic" alt="www"></div>
+              <div class="col-sm-2">
+              <img src="pic/pic2.png" class="img-responsive pic" alt="tablet"></div>
+               <div class="col-sm-2">
+              <img src="pic/pic3.png" class="img-responsive pic" alt="pc"></div> 
+              <div class="col-sm-2">
+              <img src="pic/pic4.png" class="img-responsive pic" alt="labtop"></div>
+              <div class="col-sm-2">
+              <img src="pic/pic5.png" class="img-responsive pic" alt="code"></div>
+              <div class="col-sm-2">
+              <img src="pic/pic6.png" class="img-responsive pic" alt="smartphone"></div>       
+              <br>     
     </div>
   </div>
 </div>
 
 <footer class="container-fluid">
-  <p>887371 Web Programming | Faculty of Informatics | Burapha University</p>
+<img src="pic/picme.jpg" class="img-responsive pic img-circle" alt="smartphone">
+  <br><p>Kooptikorn Damnern | 58160506@go.buu.ac.th | 887371 Web Programming | Faculty of Informatics</p>
 </footer>
 
 </body>
